@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container poppins-regular ">
+        <h1 class="title madimi-one-regular">
+            Registration Form
+            </h2>
+            <div class="form">
+                <form action="/" method="post" id="registrationForm">
+                    <div class="form-element">
+                        <label for="name">Name</label>
+                        <input class="roboto-regular " type="text" name="name" value="" id="name">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="dob">Date Of Birth</label>
+                        <input class="roboto-regular" type="date" name="dob" value="" id="dob">
+                    </div>
+
+                    <div class="radio">
+                        <label for="gender">Gender</label>
+                        <div class="radio-element">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-element">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio-element">
+                            <input type="radio" id="others" name="gender" value="others">
+                            <label for="others">Others</label>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input class="roboto-regular " type="email" name="email" value="" id="email">
+                    </div>
+
+                    <!-- todo address  -->
+                    <div class="form-element">
+                        <label for="phone">Phone No</label>
+                        <input class="roboto-regular " type="number" name="phone" value="" id="phone">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="address">Address</label>
+                        <input class="roboto-regular" name="address" id="address" value="" type="text" />
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input class="roboto-regular " type="password" name="password" value="" id="password">
+                    </div>
+
+                    <!-- <div class="form-element">
+                        <label for="cpassword">Confirm Password</label>
+                        <input class="roboto-regular " type="password" name="cpassword" value="" id="cpassword">
+                    </div> -->
+                    <div class="div-btn">
+                        <button class="btn poppins-medium" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </div>
+    <script src='./script.js'></script>
+</body>
+
+</html>
